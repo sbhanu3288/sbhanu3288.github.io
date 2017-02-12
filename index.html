@@ -11,28 +11,74 @@
   </script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
   </script>
+    <style>
+  body {
+      position: relative;
+  }
+  ul.nav-pills {
+      top: 40px;
+      position: fixed;
+  }
+  div.col-sm-9 div {
+      height: 600px;
+      font-size: 20px;
+  }
+  </style>
     </head>
     <body>
-        <nav class="navbar navbar-default">
-          <div class="container-fluid">
-            <div class="navbar-header">
-              <a class="navbar-brand" href="#">Sharon Bhanu</a>
-            </div>
-              <ul class="nav navbar-nav">
-                <li class="active"><a href="About.html">About</a></li>
-                <li><a href="Education.html">Education</a></li>
-                <li><a href="Experience.html">Experience</a></li>
-                <li><a href="Skills.html">Skills</a></li>
-                <li><a href="Comments.html">Comments</a></li>
+     <!---For the scrolling!-->
+    <body data-spy="scroll" data-target="#myScrollspy" data-offset="20">
+      <div class="container">
+      <div class="row">
+        <nav class="col-sm-3" id="myScrollspy">
+          <ul class="nav nav-pills nav-stacked">
+            <li class="active"><a href="#Skills">Skills</a></li>
+            <li><a href="#Education">Education</a></li>
+            <li><a href="#Experience">Experience</a></li>
+
+            <!---For the dropdown!-->
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">About<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#Bio">Biography</a></li>
+                <li><a href="#Contact">Contact Info</a></li>            
               </ul>
-          </div>
+            </li>
+          </ul>
         </nav>
-         <div class="progress">
-  <div class="progress-bar" role="progressbar" aria-valuenow="70"
+      <div class="col-sm-9">
+      <div id="Skills">    
+        <h1>Skills</h1>
+        <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+      </div>
+      <div id="Education"> 
+        <h1>Education</h1>
+        <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+      </div>        
+      <div id="Experience">         
+        <h1>Experience</h1>
+        <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+      </div>
+      <div id="Bio">         
+        <h1>Biography</h1>
+        <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+      </div>      
+      <div id="Contact">         
+        <h1>Contact</h1>
+        <p>Try to scroll this section and look at the navigation list while scrolling!</p>
+      </div>
+    </div>
+  </div>
+</div>
+ <!---For the Progress Bar!-->
+      <div class="progress">
+        <div class="progress-bar" role="progressbar" aria-valuenow="70"
   aria-valuemin="0" aria-valuemax="100" style="width:70%">
     70%
-  </div>
+       </div>
       </div>
+
+      <!---For the Video in the background!-->
       <div class="fullscreen-bg">
     <video loop muted autoplay poster="img/videoframe.jpg" class="fullscreen-bg__video">
         <source src="Video/background.mp4" type="video/webm">
