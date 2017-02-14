@@ -24,10 +24,9 @@
 }
 
 .jumbotronTransp {
-  border: 1px solid black;
+        border: 1px solid black;
         width: auto;
         height: auto;
-        z-index: -100;
          color: black;
          background: lavender;
         background-size: cover;
